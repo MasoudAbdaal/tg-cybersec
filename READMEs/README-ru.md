@@ -1,14 +1,20 @@
-## Репозиторий каналов Telegram по кибербезопасности 🛡️⚔️🔍
-
-[[English]](README-en.md) | [[فارسی]](../README.md) | [[中文]](README-zh.md)
-
-[[Веб-страница]](https://mehrazino.github.io/tg-cybersec/) | [[Markdown таблица]](../src/data/channels.md)
+<div align="center">
+  <h2>Список Telegram-каналов по кибербезопасности 🛡️⚔️🔍</h2>
+</div>
+<div align="center">
+  <a href="../README.md">فارسی</a> | 
+  <a href="./READMEs/README-en.md">English</a> | 
+  <a href="./READMEs/README-zh.md">中文</a>
+</div>
 
 <div align="center">
   <img src="../src/assets/icon.png" width="200" height="200" alt="Icon">
 </div>
 
-Для энтузиастов, студентов, исследователей и профессионалов в области кибербезопасности (особенно для специалистов по Threat Intelligence и OSINT).
+<div align="center">
+  <a href="https://mehrazino.github.io/tg-cybersec/">Веб-страница</a> |
+  <a href="src/data/channels.md">Markdown таблица</a>
+</div>
 
 ## Как внести свой вклад 🤝🔄
 
@@ -16,6 +22,7 @@
 
 Вы можете:
 
-- Создать новый [Issue](https://github.com/mehrazino/tg-cybersec/issues/new) и предоставить информацию о канале(ах).
-
-- Создать Pull Request и добавить информацию о канале(ах) в файл [channels.md](../src/data/channels.md).
+<ul>
+  <p>✅ Создать новый <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> и предоставить информацию о канале(ах).</p>
+  <p>✅ Создать Pull Request и добавить информацию о канале(ах) в файл <a href="./src/data/channels.md">channels.md</a>.</p>
+</ul>
