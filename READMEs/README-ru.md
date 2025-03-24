@@ -2,9 +2,9 @@
   <h2>Список Telegram-каналов по кибербезопасности 🛡️⚔️🔍</h2>
 </div>
 <div align="center">
-  <a href="../README.md">فارسی</a> | 
-  <a href="./READMEs/README-en.md">English</a> | 
-  <a href="./READMEs/README-zh.md">中文</a>
+  <a href="./README-fa.md">فارسی</a> | 
+  <a href="../README.md">English</a> | 
+  <a href="./README-zh.md">中文</a>
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 
 <div align="center">
   <a href="https://mehrazino.github.io/tg-cybersec/">Веб-страница</a> |
-  <a href="src/data/channels.md">Markdown таблица</a>
+  <a href="../src/data/channels.md">Markdown таблица</a>
 </div>
 
 ## Как внести свой вклад 🤝🔄

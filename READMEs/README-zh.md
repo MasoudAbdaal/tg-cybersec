@@ -2,9 +2,9 @@
   <h2>网络安全相关Telegram频道列表 🛡️⚔️🔍</h2>
 </div>
 <div align="center">
-  <a href="../README.md">فارسی</a> | 
-  <a href="./READMEs/README-en.md">English</a> | 
-  <a href="./READMEs/README-ru.md">Русский</a>
+  <a href="./README-fa.md">فارسی</a> | 
+  <a href="../README.md">English</a> | 
+  <a href="./README-ru.md">Русский</a>
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 
 <div align="center">
   <a href="https://mehrazino.github.io/tg-cybersec/">网页</a> |
-  <a href="src/data/channels.md">Markdown表格</a>
+  <a href="../src/data/channels.md">Markdown表格</a>
 </div>
 
 ## 如何贡献 🤝🔄
