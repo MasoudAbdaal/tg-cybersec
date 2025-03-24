@@ -1,21 +1,28 @@
-## Telegram Cybersecurity Channels Repository 🛡️⚔️🔍
-
-[[فارسی]](../README.md) | [[Русский]](README-ru.md) | [[中文]](README-zh.md)
-
-[[Web Page]](https://mehrazino.github.io/tg-cybersec/) | [[Markdown Table]](../src/data/channels.md)
+<div align="center">
+  <h2>List of Telegram Channels Related to Cybersecurity 🛡️⚔️🔍</h2>
+</div>
+<div align="center">
+  <a href="./READMEs/README-en.md">فارسی</a> | 
+  <a href="./READMEs/README-ru.md">Русский</a> | 
+  <a href="./READMEs/README-zh.md">中文</a>
+</div>
 
 <div align="center">
   <img src="../src/assets/icon.png" width="200" height="200" alt="Icon">
 </div>
 
-For enthusiasts, students, researchers, and professionals in this field (especially those active in Threat Intelligence and OSINT).
+<div align="center">
+  <a href="https://mehrazino.github.io/tg-cybersec/">Webpage</a> |
+  <a href="src/data/channels.md">Markdown Table</a>
+</div>
 
-## Contributing 🤝🔄
+## Contribution 🤝🔄
 
-We need your help to keep this repository up to date.
+We need your contribution to update this repository.
 
 You can:
 
-- Open a new [Issue](https://github.com/mehrazino/tg-cybersec/issues/new) and submit the information for the channel(s) you want to add.
-
-- Create a Pull Request and add the details of the channel(s) to the [channels.md](../src/data/channels.md) file.
+<ul>
+  <p>✅ Open a new <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> and provide the details of the channel(s) you want to add.</p>
+  <p>✅ Create a Pull Request and add the details of the channel(s) to the <a href="./src/data/channels.md">channels.md</a> file.</p>
+</ul>
