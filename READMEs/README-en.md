@@ -2,7 +2,7 @@
   <h2>List of Telegram Channels Related to Cybersecurity 🛡️⚔️🔍</h2>
 </div>
 <div align="center">
-  <a href="./READMEs/README-en.md">فارسی</a> | 
+  <a href="../README.md">فارسی</a> | 
   <a href="./READMEs/README-ru.md">Русский</a> | 
   <a href="./READMEs/README-zh.md">中文</a>
 </div>
