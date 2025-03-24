@@ -1,14 +1,22 @@
-## فهرست کانال‌های تلگرامی مرتبط با امنیت سایبری 🛡️⚔️🔍
-
-[[English]](./READMEs/README-en.md) | [[Русский]](./READMEs/README-ru.md) | [[中文]](./READMEs/README-zh.md)
-
-[[صفحه وب]](https://mehrazino.github.io/tg-cybersec/) | [[جدول Markdown]](src/data/channels.md)
+<div align="center">
+<h2>فهرست کانال‌های تلگرامی مرتبط با امنیت سایبری 🛡️⚔️🔍</h2>
+</div>
+<div align="center">
+  <a href="./READMEs/README-en.md">English</a> | 
+  <a href="./READMEs/README-ru.md">Русский</a> | 
+  <a href="./READMEs/README-zh.md">中文</a>
+  <br>
+  <br>
+</div>
 
 <div align="center">
   <img src="./src/assets/icon.png" width="200" height="200" alt="Icon">
 </div>
 
-برای علاقه‌مندان، دانشجویان، پژوهش‌گران و متخصصان این حوزه (مخصوصاً فعالین Threat Intelligence و OSINT).
+<div align="center">
+  <a href="https://mehrazino.github.io/tg-cybersec/">صفحه وب</a> |
+  <a href="src/data/channels.md">جدول مارک‌داون</a>
+</div>
 
 ## مشارکت 🤝🔄
 
