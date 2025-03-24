@@ -5,8 +5,6 @@
   <a href="./READMEs/README-en.md">English</a> | 
   <a href="./READMEs/README-ru.md">Русский</a> | 
   <a href="./READMEs/README-zh.md">中文</a>
-  <br>
-  <br>
 </div>
 
 <div align="center">
