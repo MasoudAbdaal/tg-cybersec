@@ -2,9 +2,9 @@
   <h2>List of Telegram Channels Related to Cybersecurity 🛡️⚔️🔍</h2>
 </div>
 <div align="center">
-  <a href="../README.md">فارسی</a> | 
-  <a href="./READMEs/README-ru.md">Русский</a> | 
-  <a href="./READMEs/README-zh.md">中文</a>
+  <a href="README-fa.md">فارسی</a> | 
+  <a href="README-ru.md">Русский</a> | 
+  <a href="README-zh.md">中文</a>
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 
 <div align="center">
   <a href="https://mehrazino.github.io/tg-cybersec/">Webpage</a> |
-  <a href="src/data/channels.md">Markdown Table</a>
+  <a href="./src/data/channels.md">Markdown Table</a>
 </div>
 
 ## Contribution 🤝🔄
