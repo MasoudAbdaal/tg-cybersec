@@ -24,5 +24,5 @@ You can:
 
 <ul>
   <p>✅ Open a new <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> and provide the details of the channel(s) you want to add.</p>
-  <p>✅ Create a Pull Request and add the details of the channel(s) to the <a href="./src/data/channels.md">channels.md</a> file.</p>
+  <p>✅ Create a Pull Request and add the details of the channel(s) to the <a href="../src/data/channels.md">channels.md</a> file.</p>
 </ul>
