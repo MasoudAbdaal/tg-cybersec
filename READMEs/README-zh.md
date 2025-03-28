@@ -24,5 +24,5 @@
 
 <ul>
   <p>✅ 创建新的<a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a>并提供频道信息。</p>
-  <p>✅ 创建Pull Request并将频道信息添加到<a href="./src/data/channels.md">channels.md</a>文件中。</p>
+  <p>✅ 创建Pull Request并将频道信息添加到<a href="../src/data/channels.md">channels.md</a>文件中。</p>
 </ul>
