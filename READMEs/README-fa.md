@@ -2,7 +2,7 @@
 <h2>فهرست کانال‌های تلگرامی مرتبط با امنیت سایبری 🛡️⚔️🔍</h2>
 </div>
 <div align="center">
-  <a href="../README.md">English</a> | 
+  <a href="./README-en.md">English</a> | 
   <a href="./README-ru.md">Русский</a> | 
   <a href="./README-zh.md">中文</a>
 </div>
