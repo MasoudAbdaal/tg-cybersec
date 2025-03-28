@@ -24,5 +24,5 @@
 
 <ul>
   <p>✅ Создать новый <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> и предоставить информацию о канале(ах).</p>
-  <p>✅ Создать Pull Request и добавить информацию о канале(ах) в файл <a href="./src/data/channels.md">channels.md</a>.</p>
+  <p>✅ Создать Pull Request и добавить информацию о канале(ах) в файл <a href="../src/data/channels.md">channels.md</a>.</p>
 </ul>
