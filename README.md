@@ -1,1 +1,1 @@
-/READMEs/README-fa.md
+READMEs/README-fa.md
