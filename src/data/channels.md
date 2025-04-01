@@ -3,6 +3,5 @@
 
 | Channel Name | Link | Status | Tags | Description |
 |-------------|------|--------|------|-------------|
-| مرکز تحقیقاتی APT IRAN | [APTIRAN](https://t.me/APTIRAN) | Active | red, threat-intel, osint, news | |
-| OnHex | [OnHex](https://t.me/onhex_ir) | Active | red, exploit, reverse-engineering, bug-bounty | |
-
+| مرکز تحقیقاتی APT IRAN | https://t.me/APTIRAN | Active | red, cti, osint, news, iranian | |
+| OnHex | https://t.me/onhex_ir | Active | red, exploits, re, bug-bounty, news, iranian | |
