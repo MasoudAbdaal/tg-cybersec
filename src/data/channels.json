@@ -5,9 +5,10 @@
     "status": "Active",
     "tags": [
       "red",
-      "threat-intel",
+      "cti",
       "osint",
-      "news"
+      "news",
+      "iranian"
     ],
     "description": ""
   },
@@ -17,9 +18,11 @@
     "status": "Active",
     "tags": [
       "red",
-      "exploit",
-      "reverse-engineering",
-      "bug-bounty"
+      "exploits",
+      "re",
+      "bug-bounty",
+      "news",
+      "iranian"
     ],
     "description": ""
   }
