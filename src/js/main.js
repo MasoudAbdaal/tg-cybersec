@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noChannels: 'هیچ کانالی یافت نشد.',
             loadError: 'خطا در بارگذاری داده‌ها. لطفاً صفحه را مجدداً بارگذاری کنید.',
             errorTitle: 'خطا',
-            successTitle: 'موفقیت',
+            successTitle: 'موفق',
             githubButton: 'مشاهده در گیت‌هاب',
             supportButton: 'حمایت',
             tableHeaders: {
