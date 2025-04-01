@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             languageModalTitle: 'Select Language',
             closeButton: 'بستن',
             pageTitle: 'مخزن کانال‌های تلگرام مرتبط با امنیت سایبری',
-            searchPlaceholder: 'Blue, Red, OSINT, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
             noResults: 'هیچ نتیجه‌ای برای "{searchTerm}" یافت نشد.',
             noChannels: 'هیچ کانالی یافت نشد.',
             loadError: 'خطا در بارگذاری داده‌ها. لطفاً صفحه را مجدداً بارگذاری کنید.',
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             languageModalTitle: 'Select Language',
             closeButton: 'Close',
             pageTitle: 'Telegram Cybersecurity Channels Repository',
-            searchPlaceholder: 'Blue, Red, OSINT, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
             noResults: 'No results found for "{searchTerm}".',
             noChannels: 'No channels found.',
             loadError: 'Error loading data. Please reload the page.',
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             languageModalTitle: 'Выбрать язык',
             closeButton: 'Закрыть',
             pageTitle: 'Репозиторий каналов Telegram по кибербезопасности',
-            searchPlaceholder: 'Blue, Red, OSINT, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
             noResults: 'Результатов для "{searchTerm}" не найдено.',
             noChannels: 'Каналы не найдены.',
             loadError: 'Ошибка загрузки данных. Пожалуйста, перезагрузите страницу.',
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
             languageModalTitle: '选择语言',
             closeButton: '关闭',
             pageTitle: 'Telegram网络安全频道库',
-            searchPlaceholder: 'Blue, Red, OSINT, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
             noResults: '未找到"{searchTerm}"的结果。',
             noChannels: '未找到频道。',
             loadError: '加载数据错误。请重新加载页面。',
@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             // Otherwise, we use the default text
-            searchInput.placeholder = "Blue, Red, OSINT, ...";
+            searchInput.placeholder = "Blue, Red, OSINT, RE, CTI, ...";
             searchInput.setAttribute('dir', 'ltr');
         }
     }
