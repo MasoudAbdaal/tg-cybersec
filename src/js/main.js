@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             languageButton: 'Language',
             languageModalTitle: 'Select Language',
             closeButton: 'Close',
-            pageTitle: 'Telegram Cybersecurity Channels Repository',
+            pageTitle: 'Telegram Cybersecurity Channels',
             searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
             noResults: 'No results found for "{searchTerm}".',
             noChannels: 'No channels found.',
