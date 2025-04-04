@@ -18,7 +18,7 @@
 
 ## Contribution 🤝🔄
 
-I need your contribution to keep this repository up to date.
+Please contribute to keep this repository up to date.
 
 You can:
 
