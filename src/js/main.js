@@ -15,12 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const supportModal = new bootstrap.Modal(document.getElementById('supportModal'));
     const contributeBtn = document.getElementById('contributeBtn');
     
-    // Enable tooltips for Scamminder button
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-    
     // State variables
     let channelsData = [];
     let originalChannelsData = [];
@@ -285,6 +279,21 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Apply the current language
         applyLanguage();
+        
+        // Initialize tooltips after language is applied
+        initTooltips();
+    }
+    
+    function initTooltips() {
+        // Enable tooltips for Scamminder button
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            // Set title attribute from current language
+            if (tooltipTriggerEl.classList.contains('footer-btn') && tooltipTriggerEl.querySelector('.scamminder-logo')) {
+                tooltipTriggerEl.setAttribute('title', translations[currentLanguage].scamminderTooltip);
+            }
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
     }
     
     function changeLanguage(lang) {
@@ -341,17 +350,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.footer-buttons a:nth-child(1)').textContent = t.githubButton;
         document.querySelector('.footer-buttons a:nth-child(2)').textContent = t.supportButton;
         
-        // Update Scamminder tooltip
-        const scamminderBtn = document.querySelector('.footer-buttons a:nth-child(3)');
-        if (scamminderBtn) {
-            scamminderBtn.setAttribute('data-bs-original-title', t.scamminderTooltip);
-            // Destroy and recreate tooltip to apply the new text
-            const tooltip = bootstrap.Tooltip.getInstance(scamminderBtn);
-            if (tooltip) {
-                tooltip.dispose();
-                new bootstrap.Tooltip(scamminderBtn);
-            }
-        }
+        // Reinitialize tooltips with updated language
+        initTooltips();
         
         // Update toast headers
         document.querySelector('#errorToast .toast-header strong').textContent = t.errorTitle;
