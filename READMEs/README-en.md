@@ -39,19 +39,3 @@ The owner(s), developer(s), and contributor(s) of this repository are not necess
 
 Some of the channels related to security service providers, vendors, and cybersecurity academies may be of poor quality, fake, or fraudulent. Be careful!
 (If you have valid evidence of a channel's fraudulent activities, you can open an [issue](https://github.com/mehrazino/tg-cybersec/issues/new) or [contact me](https://telegram.me/mehrazeno) to tag the channel as "scam".)
-
-## Roadmap 📈
-- Server purchase
-- Custom domain
-- Add direct editing capability on the webpage
-- Add donation button
-- Make the website responsive for LTR languages
-- Tag guidance (automatic suggestions)
-- Add filters for searching
-- Special tags for nationality, language, and country
-- Add repository for groups and bots
-- Dark/Light mode
-- Add Cyberpunk theme
-- Sort by number of channel/group members
-- Show/Hide groups
-- Button to show only groups
