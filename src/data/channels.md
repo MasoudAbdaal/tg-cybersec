@@ -36,7 +36,7 @@
 | cKure | https://t.me/cKure | Active | | |
 | Source Byte | https://t.me/source_byt3 | Active | iranian, reverse-engineering | |
 | Blue Team Alerts | https://t.me/blueteamalerts | Active | blue | |
-| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
+| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
 | Osint Plus | https://t.me/ir_osint | Active | osint, farsi | |
 | Offensive Twitter | https://t.me/OffensiveTwitter | Active | red | |
 | Proxy Bar | https://t.me/proxy_bar | Active | red | |
