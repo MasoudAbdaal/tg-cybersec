@@ -338,18 +338,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function applyLanguage() {
-        const t = translations[currentLanguage];
-        
-        // Set document direction
-        document.documentElement.setAttribute('dir', t.dir);
+        // Set document direction and language
+        document.documentElement.setAttribute('dir', translations[currentLanguage].dir);
         document.documentElement.setAttribute('lang', currentLanguage);
         
-        // Update UI text
-        languageButton.innerHTML = `<i class="bi bi-globe me-1"></i> ${t.languageButton}`;
+        // Update text elements
+        const t = translations[currentLanguage];
+        
+        // Update language button text (without globe icon)
+        languageButton.innerHTML = `${t.languageButton}`;
+        
+        // Update page title
+        document.title = t.pageTitle;
+        document.querySelector('h1').textContent = t.pageTitle;
+        
+        // Update search placeholder
+        searchInput.placeholder = t.searchPlaceholder;
+        
+        // Update language modal
         document.getElementById('languageModalLabel').textContent = t.languageModalTitle;
         document.querySelector('#languageModal .modal-footer button').textContent = t.closeButton;
-        document.querySelector('h1').textContent = t.pageTitle;
-        updateSearchPlaceholder();
+        
+        // Update footer buttons
+        document.querySelector('.footer-buttons a:nth-child(1)').textContent = t.githubButton;
+        document.querySelector('.footer-buttons a:nth-child(2)').textContent = t.supportButton;
+        
+        // Update toast headers
+        document.querySelector('#errorToast .toast-header strong').textContent = t.errorTitle;
+        document.querySelector('#successToast .toast-header strong').textContent = t.successTitle;
+        
+        // Update tags modal title
+        document.getElementById('tagsModalLabel').textContent = 'تگ‌های کانال';
+        
+        // Update tooltips to reflect new language
+        initTooltips();
         
         // Update channel count display if data is available
         if (channelsData.length > 0) {
@@ -371,13 +393,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update footer buttons
         document.querySelector('.footer-buttons a:nth-child(1)').textContent = t.githubButton;
         document.querySelector('.footer-buttons a:nth-child(2)').textContent = t.supportButton;
-        
-        // Reinitialize tooltips with updated language
-        initTooltips();
-        
-        // Update toast headers
-        document.querySelector('#errorToast .toast-header strong').textContent = t.errorTitle;
-        document.querySelector('#successToast .toast-header strong').textContent = t.successTitle;
         
         // Update tags modal title
         document.getElementById('tagsModalLabel').textContent = t.tableHeaders.tags;

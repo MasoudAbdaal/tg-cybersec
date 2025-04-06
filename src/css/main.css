@@ -773,6 +773,7 @@ a .highlight,
     .logo {
         width: 70px;
         margin-bottom: 10px !important;
+        margin-top: 25px !important;
     }
     
     .action-buttons {
@@ -993,6 +994,10 @@ a .highlight,
         min-width: 120px;
         height: 38px;
     }
+    
+    .logo {
+        margin-top: 25px !important;
+    }
 }
 
 /* Medium devices (tablets, 768px to 991px) */
@@ -1186,6 +1191,10 @@ a .highlight,
         margin: 1px;
         font-size: 0.75rem;
     }
+    
+    .logo {
+        margin-top: 25px !important;
+    }
 }
 
 /* Fix for very small height screens */
@@ -1292,11 +1301,6 @@ a .highlight,
     background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
-}
-
-.language-flag {
-    font-size: 1.2rem;
-    margin-right: 5px;
 }
 
 /* Support Modal Styles */
