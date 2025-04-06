@@ -3,6 +3,7 @@
 
 | Channel Name | Link | Status | Tags | Description |
 |-------------|------|--------|------|-------------|
+| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
 | مرکز تحقیقاتی APT IRAN | https://t.me/APTIRAN | Active | red, cti, osint, news, iranian | |
 | OnHex | https://t.me/onhex_ir | Active | red, exploits, reverse-engineering, bug-bounty, news, iranian | |
 | APA-IUTcert | https://t.me/APA_IUTcert | Active | | |
@@ -36,7 +37,6 @@
 | cKure | https://t.me/cKure | Active | | |
 | Source Byte | https://t.me/source_byt3 | Active | iranian, reverse-engineering | |
 | Blue Team Alerts | https://t.me/blueteamalerts | Active | blue | |
-| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
 | Osint Plus | https://t.me/ir_osint | Active | osint, farsi | |
 | Offensive Twitter | https://t.me/OffensiveTwitter | Active | red | |
 | Proxy Bar | https://t.me/proxy_bar | Active | red | |
