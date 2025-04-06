@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noResults: 'هیچ نتیجه‌ای برای "{searchTerm}" یافت نشد.',
             noChannels: 'هیچ کانالی یافت نشد.',
             loadError: 'خطا در بارگذاری داده‌ها. لطفاً صفحه را مجدداً بارگذاری کنید.',
+            loading: 'در حال بارگذاری',
             errorTitle: 'خطا',
             successTitle: 'موفق',
             githubButton: 'مشاهده در گیت‌هاب',
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noResults: 'No results found for "{searchTerm}".',
             noChannels: 'No channels found.',
             loadError: 'Error loading data. Please reload the page.',
+            loading: 'Loading',
             errorTitle: 'Error',
             successTitle: 'Success',
             githubButton: 'View on GitHub',
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noResults: 'Результатов для "{searchTerm}" не найдено.',
             noChannels: 'Каналы не найдены.',
             loadError: 'Ошибка загрузки данных. Пожалуйста, перезагрузите страницу.',
+            loading: 'Загрузка',
             errorTitle: 'Ошибка',
             successTitle: 'Успех',
             githubButton: 'Смотреть на GitHub',
@@ -160,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noResults: '未找到"{searchTerm}"的结果。',
             noChannels: '未找到频道。',
             loadError: '加载数据错误。请重新加载页面。',
+            loading: '加载中',
             errorTitle: '错误',
             successTitle: '成功',
             githubButton: '在GitHub上查看',
@@ -192,6 +196,27 @@ document.addEventListener('DOMContentLoaded', function() {
             contactMe: '联系我'
         }
     };
+    
+    // Initialize language
+    initLanguage();
+    
+    // Initialize tooltips
+    initTooltips();
+    
+    // Function to set loading state
+    function setLoading() {
+        const t = translations[currentLanguage];
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="5" class="text-center">
+                    ${t.loading}
+                </td>
+            </tr>
+        `;
+    }
+    
+    // Show loading state
+    setLoading();
     
     // Load channels data from JSON file
     loadChannelsData();
@@ -262,9 +287,6 @@ document.addEventListener('DOMContentLoaded', function() {
             languageModal.hide();
         });
     });
-    
-    // Initialize language
-    initLanguage();
     
     // Functions
     function initLanguage() {
@@ -412,11 +434,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateChannelCount(originalChannelsData.length);
                 
                 // Render the table
-                    renderTable();
+                renderTable();
                     
-                    // If there's a search term, apply the filter
-                    if (searchInput.value.trim()) {
-                        filterChannels(searchInput.value.trim());
+                // If there's a search term, apply the filter
+                if (searchInput.value.trim()) {
+                    filterChannels(searchInput.value.trim());
                 }
             })
             .catch(error => {
