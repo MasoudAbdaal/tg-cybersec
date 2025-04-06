@@ -23,10 +23,10 @@
 شما می‌توانید:
 
 <ul dir="rtl">
-  <p>✅ یک <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> جدید باز کنید و اطلاعات کانال(های) مورد نظر را ارسال کنید.</p>
-  <p>✅ یک Pull Request ایجاد کنید و مشخصات کانال(های) مورد نظر را به فایل <a href="../src/data/channels.md">channels.md</a> اضافه کنید.</p>
+  <p>✅ یک <a href="https://github.com/mehrazino/tg-cybersec/issues/new">Issue</a> جدید باز کنید و اطلاعات کانال(های) مورد نظر رو ارسال کنید.</p>
+  <p>✅ یک Pull Request ایجاد کنید و مشخصات کانال(های) مورد نظر رو به فایل <a href="../src/data/channels.md">channels.md</a> اضافه کنید.</p>
   
-  <p>✅ اگر قصد مشارکت در گیت‌هاب را ندارید، می‌توانید اطلاعات مدنظرتان را در <a href="https://telegram.me/mehrazeno">تلگرام</a> برای من ارسال کنید.</p>
+  <p>✅ اگر قصد ساختن حساب در گیت‌هاب رو ندارید، می‌تونید اطلاعات مدنظرتون رو در <a href="https://telegram.me/mehrazeno">تلگرام</a> برای من ارسال کنید.</p>
 </ul>
 
 ## حمایت ❤️
