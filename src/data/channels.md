@@ -4,6 +4,7 @@
 | Channel Name | Link | Status | Tags | Description |
 |-------------|------|--------|------|-------------|
 | وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
+| مهراز آزاد | https://t.me/Mehraz_Logs | Active | iranian, farsi, personal | کانال شخصی من |
 | مرکز تحقیقاتی APT IRAN | https://t.me/APTIRAN | Active | red, cti, osint, news, iranian | |
 | OnHex | https://t.me/onhex_ir | Active | red, exploits, reverse-engineering, bug-bounty, news, iranian | |
 | APA-IUTcert | https://t.me/APA_IUTcert | Active | | |
@@ -149,4 +150,3 @@
 | Max Open Source ｜ ИТ ｜ Программирование ｜ Кибербезопасность ｜ Cybersecurity ｜ InfoSec ｜ Osint | https://t.me/coursmax | Active | russian, academy, osint | |
 | IRLeaks | https://t.me/irleaks | Inactive | iranian, farsi, actor | هک اطلاعات و باج‌گیری از 20 بانک ایرانی (دریافت 3 میلیون دلار رمزارز)، 23 شرکت بیمه، تپسی، سازمان حج، اسنپ‌فود و اتاقک. |
 | Codebreakers | https://t.me/ircodebreakers | Active | iranian, farsi, actor | کانال عامل نشت و باج‌گیری اطلاعات بانک سپه |
-| مهراز آزاد | https://t.me/Mehraz_Logs | Active | iranian, farsi, personal | کانال شخصی من |
