@@ -19,11 +19,1390 @@
     "tags": [
       "red",
       "exploits",
-      "re",
+      "reverse-engineering",
       "bug-bounty",
       "news",
       "iranian"
     ],
     "description": ""
+  },
+  {
+    "name": "APA-IUTcert",
+    "link": "https://t.me/APA_IUTcert",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Pentesting News",
+    "link": "https://t.me/PentestingNews",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "GO-TO CVE",
+    "link": "https://t.me/GOTOCVE",
+    "status": "Active",
+    "tags": [
+      "cve",
+      "vulnerabilities"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Netsec",
+    "link": "https://t.me/RNetsec",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Cyber Threat Intelligence",
+    "link": "https://t.me/ctinow",
+    "status": "Active",
+    "tags": [
+      "cti"
+    ],
+    "description": ""
+  },
+  {
+    "name": "InfoSec NEWS",
+    "link": "https://t.me/defcon_news",
+    "status": "Active",
+    "tags": [
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "CVE Notify",
+    "link": "https://t.me/cveNotify",
+    "status": "Active",
+    "tags": [
+      "cve",
+      "vulnerabilities"
+    ],
+    "description": ""
+  },
+  {
+    "name": "فرصت‌های شغلی امنیت سایبری",
+    "link": "https://t.me/job_sec",
+    "status": "Active",
+    "tags": [
+      "jobs"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Android Security & Malware",
+    "link": "https://t.me/androidMalware",
+    "status": "Active",
+    "tags": [
+      "mobile"
+    ],
+    "description": ""
+  },
+  {
+    "name": "The Hacker News",
+    "link": "https://t.me/thehackernews",
+    "status": "Active",
+    "tags": [
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cyber Detective",
+    "link": "https://t.me/cybdetective",
+    "status": "Active",
+    "tags": [
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "AM Live",
+    "link": "https://t.me/anti_malware",
+    "status": "Active",
+    "tags": [
+      "news",
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SecCode",
+    "link": "https://t.me/seccode",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "The Bug Bounty Hunter",
+    "link": "https://t.me/thebugbountyhunter",
+    "status": "Active",
+    "tags": [
+      "bug_bounty"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Malware News",
+    "link": "https://t.me/malwr",
+    "status": "Active",
+    "tags": [
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "S.E.Book",
+    "link": "https://t.me/S_E_Book",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "ITShield",
+    "link": "https://t.me/itshield",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Codeby",
+    "link": "https://t.me/codeby_sec",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "CISO as a Service",
+    "link": "https://t.me/CISOasaService",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "personal"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SoheilSec",
+    "link": "https://t.me/learnpentest",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "red"
+    ],
+    "description": ""
+  },
+  {
+    "name": "cRyPtHoN™ INFOSEC (EN)",
+    "link": "https://t.me/cRyPtHoN_INFOSEC_EN",
+    "status": "Active",
+    "tags": [
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Peneter Tools",
+    "link": "https://t.me/Peneter_Tools",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "GitBook",
+    "link": "https://t.me/GitBook_s",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Threat Hunting Usecases",
+    "link": "https://t.me/threat_hunting_usecases",
+    "status": "Active",
+    "tags": [
+      "cti"
+    ],
+    "description": ""
+  },
+  {
+    "name": "-CyberSecurityTechnologies-",
+    "link": "https://t.me/CyberSecurityTechnologies",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "CYBER SPECTRUM 🩵",
+    "link": "https://t.me/cyber_spectrum",
+    "status": "Active",
+    "tags": [
+      "books"
+    ],
+    "description": ""
+  },
+  {
+    "name": "vx-underground",
+    "link": "https://t.me/vxunderground",
+    "status": "Active",
+    "tags": [
+      "red",
+      "malware"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Threat Hunting DFIR",
+    "link": "https://t.me/DFIRHunting",
+    "status": "Active",
+    "tags": [
+      "forensics"
+    ],
+    "description": ""
+  },
+  {
+    "name": "cKure",
+    "link": "https://t.me/cKure",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Source Byte",
+    "link": "https://t.me/source_byt3",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "reverse-engineering"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Blue Team Alerts",
+    "link": "https://t.me/blueteamalerts",
+    "status": "Active",
+    "tags": [
+      "blue"
+    ],
+    "description": ""
+  },
+  {
+    "name": "وب‌آموز",
+    "link": "https://t.me/webamoozir",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian",
+      "cybercrime",
+      "sponsored"
+    ],
+    "description": "کانال بررسی و اطلاع‌رسانی جرایم سایبری."
+  },
+  {
+    "name": "Osint Plus",
+    "link": "https://t.me/ir_osint",
+    "status": "Active",
+    "tags": [
+      "osint",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Offensive Twitter",
+    "link": "https://t.me/OffensiveTwitter",
+    "status": "Active",
+    "tags": [
+      "red"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Proxy Bar",
+    "link": "https://t.me/proxy_bar",
+    "status": "Active",
+    "tags": [
+      "red"
+    ],
+    "description": ""
+  },
+  {
+    "name": "World Of Security",
+    "link": "https://t.me/world_of_security",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Try Hack Box",
+    "link": "https://t.me/TryHackBox",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "1N73LL1G3NC3",
+    "link": "https://t.me/P0x3k_1N73LL1G3NC3",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "securityworld",
+    "link": "https://t.me/irsecurityworld",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "challenginno.ir",
+    "link": "https://t.me/challenginno",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "ctf"
+    ],
+    "description": ""
+  },
+  {
+    "name": "RavinAcademy",
+    "link": "https://t.me/ravinacademy",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Hackers.Zone - ناحیه هکرها",
+    "link": "https://t.me/Hackers_Zone",
+    "status": "Active",
+    "tags": [
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Library Sec Official",
+    "link": "https://t.me/LibrarySecOfficial",
+    "status": "Active",
+    "tags": [
+      "books",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Red Team Village",
+    "link": "https://t.me/RedTeamVillageRTV",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "red"
+    ],
+    "description": ""
+  },
+  {
+    "name": "sn0whacks",
+    "link": "https://t.me/sn0whacks",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian",
+      "vulnerabilities"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Tutoriales Apk",
+    "link": "https://t.me/tutoriales_apk",
+    "status": "Active",
+    "tags": [
+      "reverse-engineering",
+      "android",
+      "mobile"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Security Researcher",
+    "link": "https://t.me/OsSecurityResearcher",
+    "status": "Active",
+    "tags": [
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "InfoSecTube",
+    "link": "https://t.me/InfoSecTube",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Web Application Security",
+    "link": "https://t.me/web_appsec",
+    "status": "Active",
+    "tags": [
+      "webapp",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Pwn3rzs",
+    "link": "https://t.me/Pwn3rzs",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "PwnSystem",
+    "link": "https://t.me/officialpwnsystem",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Offensive-SEC",
+    "link": "https://t.me/offenciveSec",
+    "status": "Active",
+    "tags": [
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Order of Six Angles",
+    "link": "https://t.me/orderofsixangles",
+    "status": "Active",
+    "tags": [
+      "reverse-engineering",
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Offensive-Sec",
+    "link": "https://t.me/Offensiv3Sec",
+    "status": "Active",
+    "tags": [
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cyber Guardians",
+    "link": "https://t.me/IRCyberGuardians",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Ping Channel",
+    "link": "https://t.me/PingChannel",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian",
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "init 0",
+    "link": "https://t.me/RunlevelZer0",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "RedTeam",
+    "link": "https://t.me/RedTeamAPT",
+    "status": "Active",
+    "tags": [
+      "red",
+      "academy",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "AbhiTheModder",
+    "link": "https://t.me/AbhiTheM0dder",
+    "status": "Active",
+    "tags": [
+      "reverse-engineering",
+      "mobile"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Caster",
+    "link": "https://t.me/castercanal",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "HackerOne",
+    "link": "https://t.me/HackerOne",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "CyberSecurity Shield",
+    "link": "https://t.me/CySecShield",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "TryHackBox Story",
+    "link": "https://t.me/TryHackBoxStory",
+    "status": "Active",
+    "tags": [
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "⚔️ Ethical Hacking ⚔️",
+    "link": "https://t.me/sajjadteymouri",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "کانال بایت امن",
+    "link": "https://t.me/securebyte",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "OSINT ● Investigations ● Cyber Search🔎",
+    "link": "https://t.me/freeosint",
+    "status": "Active",
+    "tags": [
+      "russian",
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "APT ANALYSIS",
+    "link": "https://t.me/APTANALYSIS",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Dark Side of a Dark Mind",
+    "link": "https://t.me/darksideofdarkmind",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "TolueAcademy",
+    "link": "https://t.me/toluerise",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Ai000 Cybernetics QLab",
+    "link": "https://t.me/aioooir",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "group",
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "IACS",
+    "link": "https://t.me/ics_cert",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "ot",
+      "scada",
+      "ics"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Code Review",
+    "link": "https://t.me/CodeReview0o0",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Safe Defense",
+    "link": "https://t.me/safe_defense",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian",
+      "podcast",
+      "radio"
+    ],
+    "description": ""
+  },
+  {
+    "name": "iDeFense",
+    "link": "https://t.me/iDefense",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "لیان - آموزش امنیت و تست‌نفوذ",
+    "link": "https://t.me/AcademyLian",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "academy",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "DEVEXPL🧠IT",
+    "link": "https://t.me/Devexploit",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Hide01",
+    "link": "https://t.me/Hide01",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "EthSecurity",
+    "link": "https://t.me/EthSecurity1",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Infosec Fortress",
+    "link": "https://t.me/Infosec_Fortress",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "reverse-engineering"
+    ],
+    "description": ""
+  },
+  {
+    "name": "tiivik️",
+    "link": "https://t.me/tiivik",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "osint",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Security Analysis",
+    "link": "https://t.me/securation",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cafe Security",
+    "link": "https://t.me/cafe_security",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Just Security",
+    "link": "https://t.me/justsecurity",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Shadowsec",
+    "link": "https://t.me/Shadowsec_org",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "PT SWARM",
+    "link": "https://t.me/ptswarm",
+    "status": "Active",
+    "tags": [
+      "vulnerabilities"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Investigation & Forensic TOOLS",
+    "link": "https://t.me/forensictools",
+    "status": "Active",
+    "tags": [
+      "russian",
+      "forensics"
+    ],
+    "description": ""
+  },
+  {
+    "name": "ByteShield",
+    "link": "https://t.me/BinaryWorldd",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "GEOINT",
+    "link": "https://t.me/GEO1NT",
+    "status": "Active",
+    "tags": [
+      "osint",
+      "russian",
+      "geoint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cyber Warfar",
+    "link": "https://t.me/cyberwarfar",
+    "status": "Active",
+    "tags": [
+      "farsi",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Nova Group",
+    "link": "https://t.me/Nova_Groups_tech",
+    "status": "Active",
+    "tags": [
+      "news",
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "NOVA PACKAGE",
+    "link": "https://t.me/Nova_Package",
+    "status": "Active",
+    "tags": [
+      "courses",
+      "iranian",
+      "farsi",
+      "packages"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Ralf Hacker Channel",
+    "link": "https://t.me/RalfHackerChannel",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "APT",
+    "link": "https://t.me/APT_Notes",
+    "status": "Active",
+    "tags": [
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Blue Team",
+    "link": "https://t.me/BlueTeamKit",
+    "status": "Active",
+    "tags": [
+      "blue",
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "P.F.K Security",
+    "link": "https://t.me/PfkSecurity",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "digMeMore",
+    "link": "https://t.me/digmemore",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "BlackHat - UnpackME",
+    "link": "https://t.me/DevirtualizeME",
+    "status": "Active",
+    "tags": [
+      "reverse-engineering"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Unk9vvN",
+    "link": "https://t.me/Unk9vvN",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "vulnerabilities",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "HTTP Land",
+    "link": "https://t.me/HTTPLand",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "HackGit",
+    "link": "https://t.me/hackgit",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "مطالب رایگان و آزاد🎈",
+    "link": "https://t.me/TadavomnisT_channel",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Soxoj insides",
+    "link": "https://t.me/soxoj_insides",
+    "status": "Active",
+    "tags": [
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "dukera",
+    "link": "https://t.me/dukera_ch",
+    "status": "Active",
+    "tags": [
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Open Source intelligence [ OSINT ]",
+    "link": "https://t.me/OsintBlackBox",
+    "status": "Active",
+    "tags": [
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Network books ｜ Magazine",
+    "link": "https://t.me/book_network_ir",
+    "status": "Active",
+    "tags": [],
+    "description": ""
+  },
+  {
+    "name": "Geek Book 👩‍💻",
+    "link": "https://t.me/geekboook",
+    "status": "Active",
+    "tags": [
+      "books"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Splunk Administration § Devolopment Training",
+    "link": "https://t.me/splunktrain",
+    "status": "Active",
+    "tags": [
+      "blue"
+    ],
+    "description": ""
+  },
+  {
+    "name": "ОБМАНИ МЕНЯ",
+    "link": "https://t.me/human_hacking",
+    "status": "Active",
+    "tags": [
+      "humint",
+      "russian",
+      "osint",
+      "social-engineering"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Security hint",
+    "link": "https://t.me/sec_hint",
+    "status": "Active",
+    "tags": [
+      "bug-bounty",
+      "webapp",
+      "pentest"
+    ],
+    "description": ""
+  },
+  {
+    "name": "PCSG • Girls in Cybersecurity",
+    "link": "https://t.me/persiancsgirls",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Threathunting",
+    "link": "https://t.me/CyberThreatHunting",
+    "status": "Active",
+    "tags": [
+      "cti"
+    ],
+    "description": ""
+  },
+  {
+    "name": "r0 Crew (Channel)",
+    "link": "https://t.me/R0_Crew",
+    "status": "Active",
+    "tags": [
+      "reverse-engineering",
+      "exploits"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SOC Library",
+    "link": "https://t.me/soclibrary",
+    "status": "Active",
+    "tags": [
+      "blue",
+      "iranian",
+      "farsi",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "CiferTech",
+    "link": "https://t.me/CiferTech",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "hardwares"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Ninja coder",
+    "link": "https://t.me/ninjacod3r",
+    "status": "Active",
+    "tags": [
+      "webapp",
+      "pentest",
+      "farsi",
+      "iranian",
+      "bug-bounty"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Peneter Media",
+    "link": "https://t.me/Peneter_Media",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "red"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Hacking Assets",
+    "link": "https://t.me/HackingAssets",
+    "status": "Active",
+    "tags": [
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SCARPA ｜ AI Security ☢️",
+    "link": "https://t.me/SACARPA",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "ai"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Sherlock Holmes of the digital age…",
+    "link": "https://t.me/ibederov_en",
+    "status": "Active",
+    "tags": [
+      "osint",
+      "russian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Geek girl 👩‍💻",
+    "link": "https://t.me/geeekgirls",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Forensic In persian",
+    "link": "https://t.me/forensicIR",
+    "status": "Active",
+    "tags": [
+      "forensics"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Hypersec",
+    "link": "https://t.me/hypersec",
+    "status": "Active",
+    "tags": [
+      "company",
+      "academy",
+      "team",
+      "iranian",
+      "farsi",
+      "blue"
+    ],
+    "description": ""
+  },
+  {
+    "name": "..: لیک‌فا ｜ Leakfa :..",
+    "link": "https://t.me/leakfarsi",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "data",
+      "news"
+    ],
+    "description": "iranian dataleaks search engine -Like https://haveibeenpwned.com"
+  },
+  {
+    "name": "Spider Crew ｜ Bug Bounty Tips, Tools, Writeups & Exploits",
+    "link": "https://t.me/Spider_Crew",
+    "status": "Active",
+    "tags": [
+      "bug-bounty"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Crusaders",
+    "link": "https://t.me/ArgentCrusader0",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "osint",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "OsintGit",
+    "link": "https://t.me/OsintGit",
+    "status": "Active",
+    "tags": [
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Mind Hunter Community",
+    "link": "https://t.me/Mind_Hunter_Community",
+    "status": "Active",
+    "tags": [
+      "red",
+      "collection",
+      "iranian",
+      "farsi",
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SecureCoders",
+    "link": "https://t.me/securecoders",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "OSIntOps News",
+    "link": "https://t.me/Osintlatestnews",
+    "status": "Active",
+    "tags": [
+      "news",
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Blue Team ｜ SOC ｜ DFIR ｜ Cloud Security",
+    "link": "https://t.me/socanalyst",
+    "status": "Active",
+    "tags": [
+      "incident-response",
+      "blue",
+      "forensics"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cʰᵃᵐʳᵒˢʰ",
+    "link": "https://t.me/ch4mr0sh",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "reverse-engineering"
+    ],
+    "description": ""
+  },
+  {
+    "name": "H4shur ｜ هاشور ｜ <H4>shur",
+    "link": "https://t.me/h4shur",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "VSEC ｜ آموزشگاه امنیت اطلاعات",
+    "link": "https://t.me/VSEC_academy",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Deep Injection ｜ امنیت سایبری",
+    "link": "https://t.me/deep_injection",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Bug Bounty Tools & Writeups ｜ Hide Club",
+    "link": "https://t.me/Hide_Club",
+    "status": "Active",
+    "tags": [
+      "webapp",
+      "bug-bounty"
+    ],
+    "description": ""
+  },
+  {
+    "name": "0Day.Today ｜ Learn Exploit ｜ Zero World ｜ Dark web ｜",
+    "link": "https://t.me/LearnExploit",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "academy"
+    ],
+    "description": ""
+  },
+  {
+    "name": "امنیت سایبری ｜ Cyber Security",
+    "link": "https://t.me/intsec",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "news"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Библиотека разведчика ｜ Osint ｜ Книги ｜ Курсы",
+    "link": "https://t.me/books_osint",
+    "status": "Active",
+    "tags": [
+      "osint",
+      "books"
+    ],
+    "description": ""
+  },
+  {
+    "name": "پلاک نت｜مرجع انتشار محتوای حوزه امنیت سایبر",
+    "link": "https://t.me/pelaknet",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "🛡️الدرع الأخضر ｜ GREEN ARMOR🛡️",
+    "link": "https://t.me/GREEN_ARMOR",
+    "status": "Active",
+    "tags": [
+      "arabic",
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Protect\\_cyber ｜ آموزش تست نفوذ شبکه ｜ تست نفوذ وب ｜ هک قانونمند ｜ امن سازی سرور",
+    "link": "https://t.me/protect_cyber_sec",
+    "status": "Active",
+    "tags": [
+      "academy",
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Max Open Source ｜ ИТ ｜ Программирование ｜ Кибербезопасность ｜ Cybersecurity ｜ InfoSec ｜ Osint",
+    "link": "https://t.me/coursmax",
+    "status": "Active",
+    "tags": [
+      "russian",
+      "academy",
+      "osint"
+    ],
+    "description": ""
+  },
+  {
+    "name": "IRLeaks",
+    "link": "https://t.me/irleaks",
+    "status": "Inactive",
+    "tags": [
+      "iranian",
+      "farsi",
+      "actor"
+    ],
+    "description": "هک اطلاعات و باج‌گیری از 20 بانک ایرانی (دریافت 3 میلیون دلار رمزارز)، 23 شرکت بیمه، تپسی، سازمان حج، اسنپ‌فود و اتاقک."
   }
 ]

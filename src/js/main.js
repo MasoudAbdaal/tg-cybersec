@@ -2,15 +2,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
     const tableBody = document.getElementById('tableBody');
     const searchInput = document.getElementById('searchInput');
+    const searchButton = document.querySelector('.input-group-text'); // دکمه ذره‌بین
     const errorToast = new bootstrap.Toast(document.getElementById('errorToast'));
     const successToast = new bootstrap.Toast(document.getElementById('successToast'));
     const tagsModal = new bootstrap.Modal(document.getElementById('tagsModal'));
     const tagsContainer = document.getElementById('tagsContainer');
     const languageButton = document.getElementById('languageButton');
+    const channelCountButton = document.getElementById('channelCountButton');
+    const channelCountText = document.getElementById('channelCountText');
     const languageModal = new bootstrap.Modal(document.getElementById('languageModal'));
     const languageOptions = document.querySelectorAll('.language-option');
     const supportModal = new bootstrap.Modal(document.getElementById('supportModal'));
     const contributeBtn = document.getElementById('contributeBtn');
+    
+    // فعال‌سازی tooltips برای دکمه Scamminder
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
     
     // State variables
     let channelsData = [];
@@ -23,10 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
         fa: {
             dir: 'rtl',
             languageButton: 'Language',
+            channelCount: 'تعداد: {count} کانال',
             languageModalTitle: 'Select Language',
             closeButton: 'بستن',
-            pageTitle: 'مخزن کانال‌های تلگرام مرتبط با امنیت سایبری',
-            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
+            pageTitle: 'کانال‌های تلگرام مرتبط با امنیت سایبری',
+            searchPlaceholder: 'Blue, Red, OSINT, CTI, ...',
             noResults: 'هیچ نتیجه‌ای برای "{searchTerm}" یافت نشد.',
             noChannels: 'هیچ کانالی یافت نشد.',
             loadError: 'خطا در بارگذاری داده‌ها. لطفاً صفحه را مجدداً بارگذاری کنید.',
@@ -34,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             successTitle: 'موفق',
             githubButton: 'مشاهده در گیت‌هاب',
             supportButton: 'حمایت',
+            scamminderTooltip: 'تشخیص اعتبار وب‌سایت‌ها با هوش مصنوعی',
             tableHeaders: {
                 name: 'نام کانال',
                 link: 'لینک',
@@ -63,10 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
         en: {
             dir: 'ltr',
             languageButton: 'Language',
+            channelCount: 'Count: {count} channels',
             languageModalTitle: 'Select Language',
             closeButton: 'Close',
             pageTitle: 'Telegram Cybersecurity Channels',
-            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, CTI, ...',
             noResults: 'No results found for "{searchTerm}".',
             noChannels: 'No channels found.',
             loadError: 'Error loading data. Please reload the page.',
@@ -74,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             successTitle: 'Success',
             githubButton: 'View on GitHub',
             supportButton: 'Support',
+            scamminderTooltip: 'AI-Powered Scam Detector',
             tableHeaders: {
                 name: 'Channel Name',
                 link: 'Link',
@@ -103,10 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
         ru: {
             dir: 'ltr',
             languageButton: 'Язык',
+            channelCount: 'Каналы: {count} каналов',
             languageModalTitle: 'Выбрать язык',
             closeButton: 'Закрыть',
             pageTitle: 'Репозиторий каналов Telegram по кибербезопасности',
-            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, CTI, ...',
             noResults: 'Результатов для "{searchTerm}" не найдено.',
             noChannels: 'Каналы не найдены.',
             loadError: 'Ошибка загрузки данных. Пожалуйста, перезагрузите страницу.',
@@ -114,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             successTitle: 'Успех',
             githubButton: 'Смотреть на GitHub',
             supportButton: 'Поддержка',
+            scamminderTooltip: 'ИИ-детектор мошенничества',
             tableHeaders: {
                 name: 'Название канала',
                 link: 'Ссылка',
@@ -143,10 +158,11 @@ document.addEventListener('DOMContentLoaded', function() {
         zh: {
             dir: 'ltr',
             languageButton: '语言',
+            channelCount: '频道: {count} 个',
             languageModalTitle: '选择语言',
             closeButton: '关闭',
             pageTitle: 'Telegram网络安全频道库',
-            searchPlaceholder: 'Blue, Red, OSINT, RE, CTI, ...',
+            searchPlaceholder: 'Blue, Red, OSINT, CTI, ...',
             noResults: '未找到"{searchTerm}"的结果。',
             noChannels: '未找到频道。',
             loadError: '加载数据错误。请重新加载页面。',
@@ -154,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             successTitle: '成功',
             githubButton: '在GitHub上查看',
             supportButton: '支持',
+            scamminderTooltip: '人工智能驱动的诈骗检测器',
             tableHeaders: {
                 name: '频道名称',
                 link: '链接',
@@ -186,10 +203,25 @@ document.addEventListener('DOMContentLoaded', function() {
     loadChannelsData();
     
     // Set up auto-refresh (every 30 seconds)
-    let autoRefreshInterval = setInterval(loadChannelsData, 30000);
+    // let autoRefreshInterval = setInterval(loadChannelsData, 30000);
     
     // Event listeners
     searchInput.addEventListener('input', handleSearch);
+    searchInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            filterChannels(searchTerm);
+            searchInput.blur();
+            document.activeElement.blur();
+            event.preventDefault();
+        }
+    });
+    searchButton.addEventListener('click', function() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        filterChannels(searchTerm);
+        searchInput.blur();
+        document.activeElement.blur();
+    });
     languageButton.addEventListener('click', () => languageModal.show());
     
     // Support modal event listeners
@@ -288,6 +320,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('h1').textContent = t.pageTitle;
         updateSearchPlaceholder();
         
+        // Update channel count display if data is available
+        if (channelsData.length > 0) {
+            updateChannelCount(channelsData.length);
+        } else {
+            updateChannelCount(0);
+        }
+        
         // Update table headers
         const tableHeaders = document.querySelectorAll('thead th');
         if (tableHeaders.length >= 5) {
@@ -301,6 +340,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update footer buttons
         document.querySelector('.footer-buttons a:nth-child(1)').textContent = t.githubButton;
         document.querySelector('.footer-buttons a:nth-child(2)').textContent = t.supportButton;
+        
+        // Update Scamminder tooltip
+        const scamminderBtn = document.querySelector('.footer-buttons a:nth-child(3)');
+        if (scamminderBtn) {
+            scamminderBtn.setAttribute('data-bs-original-title', t.scamminderTooltip);
+            // Destroy and recreate tooltip to apply the new text
+            const tooltip = bootstrap.Tooltip.getInstance(scamminderBtn);
+            if (tooltip) {
+                tooltip.dispose();
+                new bootstrap.Tooltip(scamminderBtn);
+            }
+        }
         
         // Update toast headers
         document.querySelector('#errorToast .toast-header strong').textContent = t.errorTitle;
@@ -357,6 +408,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Make a deep copy for the original data
                 originalChannelsData = JSON.parse(JSON.stringify(channelsData));
                 
+                // نمایش تعداد کل کانال‌ها
+                updateChannelCount(originalChannelsData.length);
+                
                 // Render the table
                     renderTable();
                     
@@ -376,6 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </td>
                     </tr>
                 `;
+                channelCountText.textContent = t.channelCount.replace('{count}', 0);
             });
     }
     
@@ -400,8 +455,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const nameDir = isPersian(channel.name) ? 'rtl' : 'ltr';
             const descDir = isPersian(channel.description) ? 'rtl' : 'ltr';
             
+            // بررسی اینکه آیا کانال اسپانسر شده است
+            const isSponsored = channel.tags && channel.tags.some(tag => tag.toLowerCase() === 'sponsored');
+            const sponsoredClass = isSponsored ? 'sponsored-row' : '';
+            
             tableHTML += `
-                <tr>
+                <tr class="${sponsoredClass}">
                 <td dir="${nameDir}">${escapeHtml(channel.name)}</td>
                     <td class="link-cell">${formatLink(channel.link)}</td>
                     <td>
@@ -410,8 +469,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             channel.status === 'Inactive' ? t.statusLabels.inactive : t.statusLabels.unknown
                         }</span>
                     </td>
-                    <td data-channel-index="${index}">${formatTags(channel.tags, null, index)}</td>
-                <td dir="${descDir}">${formatDescription(channel.description)}</td>
+                    <td>${formatTags(channel.tags, null, index)}</td>
+                    <td dir="${descDir}">${formatDescription(channel.description)}</td>
                 </tr>
             `;
         });
@@ -455,7 +514,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             // Otherwise, we use the default text
-            searchInput.placeholder = "Blue, Red, OSINT, RE, CTI, ...";
+            searchInput.placeholder = "Blue, Red, OSINT, CTI, ...";
             searchInput.setAttribute('dir', 'ltr');
         }
     }
@@ -494,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Sort the filtered channels by link
+        // ترتیب کانال‌های فیلتر شده: اول اسپانسرها، سپس بقیه
         const sortedFilteredChannels = sortChannelsByLink(filteredChannels);
         
         const t = translations[currentLanguage];
@@ -514,22 +573,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let tableHTML = '';
         
         sortedFilteredChannels.forEach((channel, index) => {
-            // For highlighting text, we need to consider all search terms
-            let highlightedName = channel.name;
-            let displayLink = getDisplayLink(channel.link);
-            let highlightedLink = displayLink;
-            let highlightedDescription = channel.description;
-            
-            // Highlighting all search terms
-            searchTerms.forEach(term => {
-                highlightedName = highlightText(highlightedName, term);
-                highlightedLink = highlightText(highlightedLink, term);
-                highlightedDescription = highlightText(highlightedDescription, term);
-            });
-            
-            // Converting links in descriptions to a tags
-            const descriptionWithLinks = formatDescriptionWithHighlight(channel.description, searchTerms);
-            
             // Finding the main index of the channel in channelsData array
             const originalIndex = channelsData.findIndex(c => c.name === channel.name && c.link === channel.link);
             
@@ -537,10 +580,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const nameDir = isPersian(channel.name) ? 'rtl' : 'ltr';
             const descDir = isPersian(channel.description) ? 'rtl' : 'ltr';
             
+            // بررسی اینکه آیا کانال اسپانسر شده است
+            const isSponsored = channel.tags && channel.tags.some(tag => tag.toLowerCase() === 'sponsored');
+            const sponsoredClass = isSponsored ? 'sponsored-row' : '';
+            
+            // Create safely highlighted content
+            let highlightedName = highlightText(channel.name, searchTerms);
+            let displayLink = getDisplayLink(channel.link);
+            let highlightedLink = highlightText(displayLink, searchTerms);
+            let descriptionWithLinks = formatDescriptionWithHighlight(channel.description, searchTerms);
+            
             tableHTML += `
-                <tr>
+                <tr class="${sponsoredClass}">
                     <td dir="${nameDir}">${highlightedName}</td>
-                    <td class="link-cell"><a href="${channel.link}" target="_blank" rel="noopener noreferrer" title="${channel.link}">${highlightedLink}</a></td>
+                    <td class="link-cell"><a href="${escapeHtml(channel.link)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(channel.link)}">${highlightedLink}</a></td>
                     <td>
                         <span class="status-badge status-${channel.status.toLowerCase()}">${
                             channel.status === 'Active' ? t.statusLabels.active : 
@@ -554,6 +607,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         tableBody.innerHTML = tableHTML;
+        
+        // نمایش تعداد نتایج جستجو در یک المان دیگر یا به روش دیگر
+        // به عنوان مثال، می‌توان یک المان HTML جدید اضافه کرد که نتایج جستجو را نشان دهد
         
         // Adding click events for 'show more tags' buttons
         const moreTagsButtons = tableBody.querySelectorAll('.more-tags[data-channel-index]');
@@ -569,25 +625,59 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function highlightText(text, searchTerm) {
-        if (!searchTerm) return escapeHtml(text);
+        if (!text || !searchTerm || !searchTerm.length) return escapeHtml(text || '');
         
-        // If searchTerm is an array
-        if (Array.isArray(searchTerm)) {
-            let highlightedText = escapeHtml(text);
+        try {
+            // ابتدا هر گونه HTML موجود در متن را حذف می‌کنیم
+            const tempDiv = document.createElement('div');
+            tempDiv.textContent = text;
+            const plainText = tempDiv.textContent;
             
-            // For each search term, we highlight the text
-            searchTerm.forEach(term => {
-                if (term) {
-                    const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
-                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+            // متن ساده را escape می‌کنیم
+            const safeText = escapeHtml(plainText);
+            
+            // اگر عبارت جستجو وجود ندارد یا بعد از trim خالی است
+            if (!searchTerm || 
+                (typeof searchTerm === 'string' && !searchTerm.trim()) || 
+                (Array.isArray(searchTerm) && (!searchTerm.length || !searchTerm.some(t => t && typeof t === 'string' && t.trim())))) {
+                return safeText;
+            }
+            
+            // پردازش آرایه‌ای از عبارات جستجو
+            if (Array.isArray(searchTerm)) {
+                // فیلتر کردن عبارات معتبر و مرتب‌سازی براساس طول (نزولی)
+                const validTerms = searchTerm
+                    .filter(term => term && typeof term === 'string' && term.trim())
+                    .map(term => term.trim())
+                    .sort((a, b) => b.length - a.length);
+                
+                if (!validTerms.length) return safeText;
+                
+                // پردازش هر عبارت به صورت جداگانه
+                let result = safeText;
+                for (const term of validTerms) {
+                    // ایمن‌سازی الگوی regex
+                    const pattern = escapeRegExp(term);
+                    const regex = new RegExp(`(${pattern})`, 'gi');
+                    
+                    // جایگزینی با تگ هایلایت
+                    result = result.replace(regex, '<span class="highlight">$1</span>');
                 }
-            });
+                return result;
+            } 
+            // پردازش یک عبارت جستجوی منفرد
+            else if (typeof searchTerm === 'string' && searchTerm.trim()) {
+                const pattern = escapeRegExp(searchTerm.trim());
+                const regex = new RegExp(`(${pattern})`, 'gi');
+                
+                return safeText.replace(regex, '<span class="highlight">$1</span>');
+            }
             
-            return highlightedText;
-        } else {
-            // Previous state for compatibility with existing code
-            const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
-            return escapeHtml(text).replace(regex, '<span class="highlight">$1</span>');
+            // حالت پیش‌فرض - برگرداندن متن ایمن
+            return safeText;
+        } catch (e) {
+            console.error('Error in highlightText:', e);
+            return escapeHtml(text || '');
         }
     }
     
@@ -598,176 +688,229 @@ document.addEventListener('DOMContentLoaded', function() {
     function formatTags(tagsArray, searchTerm, index) {
         if (!tagsArray || tagsArray.length === 0) return '';
         
-        // Removing duplicate tags using Set
+        // حداکثر تعداد تگ قابل نمایش
+        const maxVisibleTags = 3;
+        
+        // حذف تگ‌های تکراری
         const uniqueTags = [...new Set(tagsArray)];
         
-        // Number of tags to be displayed
-        const maxVisibleTags = 5;
+        // فیلتر کردن تگ sponsored (برای نمایش ندادن آن)
+        const visibleTags = uniqueTags.filter(tag => tag.toLowerCase() !== 'sponsored');
         
-        // If the number of tags is more than maximum allowed
-        if (uniqueTags.length > maxVisibleTags) {
-            const visibleTags = uniqueTags.slice(0, maxVisibleTags);
-            const remainingCount = uniqueTags.length - maxVisibleTags;
+        // Function to create a single tag HTML
+        const createTagHtml = (tag) => {
+            // First escape the tag content
+            const safeTagContent = escapeHtml(tag);
             
-            let tagsHtml = visibleTags.map(tag => {
-                let tagClass = 'tag';
-                
-                // Checking match with each search term
-                let tagContent = tag;
-                if (searchTerm) {
-                    if (Array.isArray(searchTerm)) {
-                        // Checking match with each search term
-                        const matchesAnyTerm = searchTerm.some(term => 
-                            term && tag.toLowerCase().includes(term.toLowerCase())
-                        );
-                        
-                        if (matchesAnyTerm) {
-                            tagContent = highlightText(tag, searchTerm);
-                        } else {
-                            tagContent = escapeHtml(tag);
-                        }
-                    } else if (tag.toLowerCase().includes(searchTerm.toLowerCase())) {
+            let tagClass = 'tag';
+            
+            // Add specific classes based on tag content
+            if (tag.toLowerCase() === 'sponsored') {
+                tagClass += ' tag-sponsored';
+            } else if (tag.toLowerCase().includes('blue')) {
+                tagClass += ' tag-blue';
+            } else if (tag.toLowerCase().includes('red')) {
+                tagClass += ' tag-red';
+            } else if (tag.toLowerCase().includes('news')) {
+                tagClass += ' tag-news';
+            } else if (tag.toLowerCase().includes('academy')) {
+                tagClass += ' tag-academy';
+            }
+            
+            // If search term exists, try to highlight it
+            let tagContent = safeTagContent;
+            if (searchTerm) {
+                try {
+                    if (Array.isArray(searchTerm) && searchTerm.some(term => term && typeof term === 'string' && tag.toLowerCase().includes(term.toLowerCase()))) {
                         tagContent = highlightText(tag, searchTerm);
-                    } else {
-                        tagContent = escapeHtml(tag);
+                    } else if (typeof searchTerm === 'string' && tag.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        tagContent = highlightText(tag, searchTerm);
                     }
-                } else {
-                    tagContent = escapeHtml(tag);
+                } catch (e) {
+                    console.error("Error highlighting tag:", e);
+                    tagContent = safeTagContent; // Fallback to safe content
                 }
-                
-                return `<span class="${tagClass}">${tagContent}</span>`;
-            }).join(' ');
+            }
             
-            // Adding button to show more tags
-            tagsHtml += ` <span class="more-tags" data-channel-index="${index}">+${remainingCount}</span>`;
+            return `<span class="${tagClass}">${tagContent}</span>`;
+        };
+        
+        // اگر تعداد تگ‌های قابل نمایش بیشتر از حداکثر مجاز باشد
+        if (visibleTags.length > maxVisibleTags) {
+            const displayTags = visibleTags.slice(0, maxVisibleTags);
+            const remainingCount = visibleTags.length - maxVisibleTags;
+            
+            // ایجاد HTML برای تگ‌های قابل نمایش
+            let tagsHtml = displayTags.map(createTagHtml).join(' ');
+            
+            // اضافه کردن دکمه برای نمایش تگ‌های بیشتر
+            tagsHtml += ` <span class="more-tags" data-channel-index="${index}" title="نمایش همه تگ‌ها">+${remainingCount}</span>`;
             
             return tagsHtml;
         } else {
-            // If the number of tags is less than or equal to maximum allowed
-            return uniqueTags.map(tag => {
-                let tagClass = 'tag';
-                
-                // Add specific classes based on tag content
-                if (tag.toLowerCase().includes('blue')) {
-                    tagClass += ' tag-blue';
-                } else if (tag.toLowerCase().includes('red')) {
-                    tagClass += ' tag-red';
-                } else if (tag.toLowerCase().includes('news')) {
-                    tagClass += ' tag-news';
-                } else if (tag.toLowerCase().includes('academy')) {
-                    tagClass += ' tag-academy';
-                }
-                
-                // Highlight the tag if it matches the search term
-                let tagContent = tag;
-                if (searchTerm) {
-                    if (Array.isArray(searchTerm)) {
-                        // Checking match with each search term
-                        const matchesAnyTerm = searchTerm.some(term => 
-                            term && tag.toLowerCase().includes(term.toLowerCase())
-                        );
-                        
-                        if (matchesAnyTerm) {
-                            tagContent = highlightText(tag, searchTerm);
-                        } else {
-                            tagContent = escapeHtml(tag);
-                        }
-                    } else if (tag.toLowerCase().includes(searchTerm.toLowerCase())) {
-                        tagContent = highlightText(tag, searchTerm);
-                    } else {
-                        tagContent = escapeHtml(tag);
-                    }
-                } else {
-                    tagContent = escapeHtml(tag);
-                }
-                
-                return `<span class="${tagClass}">${tagContent}</span>`;
-            }).join(' ');
+            // اگر تعداد تگ‌ها کمتر یا مساوی حداکثر مجاز باشد
+            return visibleTags.map(createTagHtml).join(' ');
         }
     }
     
     function formatLink(link) {
-        const displayLink = getDisplayLink(link);
-        return `<a href="${link}" target="_blank" rel="noopener noreferrer" title="${link}">${escapeHtml(displayLink)}</a>`;
+        if (!link) return '';
+        
+        try {
+            const displayLink = getDisplayLink(link);
+            const safeDisplayLink = escapeHtml(displayLink);
+            const safeLink = escapeHtml(link);
+            
+            return `<a href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeLink}">${safeDisplayLink}</a>`;
+        } catch (e) {
+            console.error("Error in formatLink:", e, "for link:", link);
+            return escapeHtml(link || '');
+        }
     }
     
     function formatDescription(description) {
         if (!description) return '';
         
-        // Pattern for detecting links (http, https, ftp, and telegram links)
-        const urlRegex = /(https?:\/\/[^\s]+)|(ftp:\/\/[^\s]+)|(www\.[^\s]+)|(@[a-zA-Z0-9_]{5,})|((https?:\/\/)?(t\.me\/[^\s]+))/g;
-        
-        // Replacing links with a tags
-        const formattedText = escapeHtml(description).replace(urlRegex, function(url) {
-            let href = url;
+        try {
+            // اول باید هر گونه HTML موجود در متن اصلی را کاملاً حذف کنیم
+            // این متن را به یک رشته متنی ساده تبدیل می‌کند
+            const tempDiv = document.createElement('div');
+            tempDiv.textContent = description;
+            const plainText = tempDiv.textContent;
             
-            // Adding http:// to links that start with www
-            if (url.startsWith('www.')) {
-                href = 'http://' + url;
-            }
+            // حالا متن خالص را escape می‌کنیم تا از حملات XSS جلوگیری شود
+            const safeText = escapeHtml(plainText);
             
-            // Converting telegram username to link
-            if (url.startsWith('@') && url.length > 5) {
-                href = 'https://t.me/' + url.substring(1);
-            }
+            // الگوی تشخیص لینک‌ها
+            const urlRegex = /(https?:\/\/[^\s]+)|(ftp:\/\/[^\s]+)|(www\.[^\s]+)|(@[a-zA-Z0-9_]{5,})|((https?:\/\/)?(t\.me\/[^\s]+))/g;
             
-            return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="description-link">${url}</a>`;
-        });
-        
-        return formattedText;
+            // جایگزینی لینک‌ها با تگ‌های a
+            const formattedText = safeText.replace(urlRegex, function(url) {
+                let href = url;
+                
+                // افزودن http:// به لینک‌هایی که با www شروع می‌شوند
+                if (url.startsWith('www.')) {
+                    href = 'http://' + url;
+                }
+                
+                // تبدیل نام کاربری تلگرام به لینک
+                if (url.startsWith('@') && url.length > 5) {
+                    href = 'https://t.me/' + url.substring(1);
+                }
+                
+                return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="description-link">${url}</a>`;
+            });
+            
+            return formattedText;
+        } catch (e) {
+            console.error('Error in formatDescription:', e);
+            // در صورت خطا، متن اصلی را به صورت escape شده برمی‌گردانیم
+            return escapeHtml(description);
+        }
     }
     
+    // تابع کمکی برای هایلایت کردن عبارات
+    function highlightSearchTerms(text, searchTerms) {
+        if (!text || !searchTerms || !searchTerms.length) return text;
+        
+        try {
+            // ابتدا متن را ایمن‌سازی می‌کنیم
+            let safeText = text;
+            
+            // اگر آرایه ای از عبارات جستجو داریم
+            if (Array.isArray(searchTerms)) {
+                // فیلتر و مرتب‌سازی عبارات معتبر (از بلندترین به کوتاه‌ترین)
+                const validTerms = searchTerms
+                    .filter(term => term && typeof term === 'string' && term.trim())
+                    .map(term => term.trim())
+                    .sort((a, b) => b.length - a.length);
+                
+                if (validTerms.length === 0) return safeText;
+                
+                // جایگزینی عبارات با تگ هایلایت
+                for (const term of validTerms) {
+                    const escapedPattern = escapeRegExp(term);
+                    const regex = new RegExp(`(${escapedPattern})`, 'gi');
+                    safeText = safeText.replace(regex, '<span class="highlight">$1</span>');
+                }
+            } 
+            // اگر یک عبارت جستجوی منفرد داریم
+            else if (typeof searchTerms === 'string' && searchTerms.trim()) {
+                const escapedPattern = escapeRegExp(searchTerms.trim());
+                const regex = new RegExp(`(${escapedPattern})`, 'gi');
+                safeText = safeText.replace(regex, '<span class="highlight">$1</span>');
+            }
+            
+            return safeText;
+        } catch (e) {
+            console.error('Error in highlightSearchTerms:', e);
+            return text;
+        }
+    }
+
     function formatDescriptionWithHighlight(description, searchTerm) {
         if (!description) return '';
         
-        // First we escape the text
-        let escapedText = escapeHtml(description);
-        
-        // Then we highlight the searched term
-        if (searchTerm) {
-            if (Array.isArray(searchTerm)) {
-                // For each search term, we highlight the text
-                searchTerm.forEach(term => {
-                    if (term) {
-                        const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
-                        escapedText = escapedText.replace(regex, '<span class="highlight">$1</span>');
-                    }
+        try {
+            // مرحله 1: هر گونه HTML در متن اصلی را حذف می‌کنیم
+            const tempDiv = document.createElement('div');
+            tempDiv.textContent = description;
+            const plainText = tempDiv.textContent;
+            
+            // مرحله 2: متن خالص را escape می‌کنیم
+            const safeText = escapeHtml(plainText);
+            
+            // مرحله 3: لینک‌ها را با یک نشانگر موقتی (جایگزین) علامت‌گذاری می‌کنیم
+            // این نشانگر به ما اجازه می‌دهد بعداً لینک‌ها را بازیابی کنیم
+            const urlRegex = /(https?:\/\/[^\s]+)|(ftp:\/\/[^\s]+)|(www\.[^\s]+)|(@[a-zA-Z0-9_]{5,})|((https?:\/\/)?(t\.me\/[^\s]+))/g;
+            
+            // همه لینک‌ها را پیدا می‌کنیم
+            const links = [];
+            let markedText = safeText.replace(urlRegex, (match, ...args) => {
+                const id = links.length;
+                links.push({
+                    url: match,
+                    id: id
                 });
-            } else {
-                const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
-                escapedText = escapedText.replace(regex, '<span class="highlight">$1</span>');
+                return `__LINK_${id}__`;
+            });
+            
+            // مرحله 4: اکنون متن را با عبارات جستجو هایلایت می‌کنیم
+            let highlightedText = (searchTerm && searchTerm.length) 
+                ? highlightSearchTerms(markedText, searchTerm)
+                : markedText;
+            
+            // مرحله 5: نشانگرهای لینک را با تگ‌های HTML مناسب جایگزین می‌کنیم
+            for (let i = 0; i < links.length; i++) {
+                const link = links[i];
+                const linkMarker = `__LINK_${i}__`;
+                
+                let href = link.url;
+                
+                // پردازش انواع خاص لینک
+                if (link.url.startsWith('www.')) {
+                    href = 'http://' + link.url;
+                } else if (link.url.startsWith('@') && link.url.length > 5) {
+                    href = 'https://t.me/' + link.url.substring(1);
+                }
+                
+                // هایلایت کردن متن لینک اگر شامل عبارت جستجو است
+                let linkText = link.url;
+                if (searchTerm && searchTerm.length) {
+                    linkText = highlightSearchTerms(linkText, searchTerm);
+                }
+                
+                const linkHtml = `<a href="${href}" target="_blank" rel="noopener noreferrer" class="description-link">${linkText}</a>`;
+                
+                // جایگزینی نشانگر با تگ HTML
+                highlightedText = highlightedText.replace(linkMarker, linkHtml);
             }
+            
+            return highlightedText;
+        } catch (e) {
+            console.error('Error in formatDescriptionWithHighlight:', e);
+            return escapeHtml(description || '');
         }
-        
-        // Pattern for detecting links (http, https, ftp, and telegram links)
-        const urlRegex = /(https?:\/\/[^\s]+)|(ftp:\/\/[^\s]+)|(www\.[^\s]+)|(@[a-zA-Z0-9_]{5,})|((https?:\/\/)?(t\.me\/[^\s]+))/g;
-        
-        // Replacing links with a tags
-        const formattedText = escapedText.replace(urlRegex, function(url) {
-            // If the link includes highlight tag, we must preserve it
-            const hasHighlight = url.includes('<span class="highlight">');
-            
-            // If the link includes highlight tag, we shouldn't change it
-            if (hasHighlight) {
-                return url;
-            }
-            
-            let href = url;
-            
-            // Adding http:// to links that start with www
-            if (url.startsWith('www.')) {
-                href = 'http://' + url;
-            }
-            
-            // Converting telegram username to link
-            if (url.startsWith('@') && url.length > 5) {
-                href = 'https://t.me/' + url.substring(1);
-            }
-            
-            return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="description-link">${url}</a>`;
-        });
-        
-        return formattedText;
     }
     
     function getDisplayLink(link) {
@@ -793,13 +936,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function escapeHtml(unsafe) {
-        if (!unsafe) return '';
-        return unsafe
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
+        if (unsafe === undefined || unsafe === null) return '';
+        
+        try {
+            // Ensure unsafe is treated as a string
+            unsafe = String(unsafe);
+            
+            // Extra replacement for curly braces, hash, and other potentially problematic characters
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;")
+                .replace(/`/g, "&#96;")  // Backtick
+                .replace(/\$/g, "&#36;"); // Dollar sign
+        } catch (e) {
+            console.error("Error in escapeHtml:", e, "for input:", unsafe);
+            return '';
+        }
+    }
+    
+    // Function to update the channel count display
+    function updateChannelCount(count) {
+        const t = translations[currentLanguage];
+        // همیشه تعداد کل کانال‌ها را نمایش می‌دهیم
+        // اگر originalChannelsData موجود باشد از آن استفاده می‌کنیم در غیر این صورت از count استفاده می‌کنیم
+        const totalCount = originalChannelsData && originalChannelsData.length ? originalChannelsData.length : count;
+        channelCountText.textContent = t.channelCount.replace('{count}', totalCount);
     }
     
     function showError(message) {
@@ -818,11 +982,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function showAllTags(tagsArray) {
         if (!tagsArray || tagsArray.length === 0) return;
         
-        // Removing duplicate tags
+        // حذف تگ‌های تکراری
         const uniqueTags = [...new Set(tagsArray)];
         
+        // فیلتر کردن تگ sponsored (برای نمایش ندادن آن)
+        const visibleTags = uniqueTags.filter(tag => tag.toLowerCase() !== 'sponsored');
+        
         // Creating HTML for displaying tags
-        const tagsHtml = uniqueTags.map(tag => {
+        const tagsHtml = visibleTags.map(tag => {
+            // First escape any HTML in the tag
+            const safeTag = escapeHtml(tag);
+            
             let tagClass = 'tag';
             
             // Add specific classes based on tag content
@@ -836,7 +1006,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 tagClass += ' tag-academy';
             }
             
-            return `<span class="${tagClass}">${escapeHtml(tag)}</span>`;
+            return `<span class="${tagClass}">${safeTag}</span>`;
         }).join(' ');
         
         // Placing tags in modal
@@ -846,15 +1016,27 @@ document.addEventListener('DOMContentLoaded', function() {
         tagsModal.show();
     }
     
-    // Function to sort channels by link alphabetically
+    // Function to return channels in random order
     function sortChannelsByLink(channels) {
-        return [...channels].sort((a, b) => {
-            // Extract the username part from the link for comparison
-            const usernameA = getChannelUsername(a.link).toLowerCase();
-            const usernameB = getChannelUsername(b.link).toLowerCase();
-            
-            return usernameA.localeCompare(usernameB);
-        });
+        // ابتدا کانال‌های اسپانسر را جدا می‌کنیم
+        const sponsoredChannels = channels.filter(channel => 
+            channel.tags && channel.tags.some(tag => tag.toLowerCase() === 'sponsored')
+        );
+        
+        // بقیه کانال‌ها را به صورت تصادفی مرتب می‌کنیم
+        const otherChannels = channels.filter(channel => 
+            !channel.tags || !channel.tags.some(tag => tag.toLowerCase() === 'sponsored')
+        );
+        
+        // مرتب‌سازی تصادفی برای کانال‌های غیر اسپانسر
+        const shuffledOtherChannels = [...otherChannels];
+        for (let i = shuffledOtherChannels.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledOtherChannels[i], shuffledOtherChannels[j]] = [shuffledOtherChannels[j], shuffledOtherChannels[i]];
+        }
+        
+        // ترکیب کانال‌های اسپانسر (در بالا) با بقیه کانال‌ها
+        return [...sponsoredChannels, ...shuffledOtherChannels];
     }
     
     // Helper function to extract username from link
