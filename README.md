@@ -38,4 +38,5 @@ You can:
 The owner(s), developer(s), and contributor(s) of this repository are not necessarily associated with the channels submitted to this repository.
 
 Some of the channels related to security service providers, vendors, and cybersecurity academies may be of poor quality, fake, or fraudulent. Be careful!
+
 (If you have valid evidence of a channel's fraudulent activities, you can open an [issue](https://github.com/mehrazino/tg-cybersec/issues/new) or [contact me](https://telegram.me/mehrazeno) to tag the channel as "scam".)
