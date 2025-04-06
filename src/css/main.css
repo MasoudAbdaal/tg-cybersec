@@ -901,6 +901,8 @@ a .highlight,
         top: 10px;
         padding: 5px 10px;
         font-size: 0.8rem;
+        min-width: 85px;
+        height: 33px;
     }
     
     #languageButton {
@@ -985,6 +987,11 @@ a .highlight,
     .more-tags {
         height: 22px;
         min-width: 22px;
+    }
+    
+    .language-btn {
+        min-width: 120px;
+        height: 38px;
     }
 }
 
@@ -1225,19 +1232,21 @@ a .highlight,
     padding: 8px 15px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-width: 2px;
 }
 
 #languageButton {
     right: 10px;
-    border-width: 2px;
 }
 
 #channelCountButton {
-    left: 15px;
-    top: 15px;
+    left: 10px;
     transition: none;
     cursor: default;
-    border-width: 2px;
 }
 
 #channelCountButton:hover {
