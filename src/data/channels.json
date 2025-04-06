@@ -13,6 +13,17 @@
     "description": "کانال بررسی و اطلاع‌رسانی جرایم سایبری."
   },
   {
+    "name": "مهراز آزاد",
+    "link": "https://t.me/Mehraz_Logs",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "personal"
+    ],
+    "description": "کانال شخصی من"
+  },
+  {
     "name": "مرکز تحقیقاتی APT IRAN",
     "link": "https://t.me/APTIRAN",
     "status": "Active",
@@ -1416,16 +1427,5 @@
       "actor"
     ],
     "description": "کانال عامل نشت و باج‌گیری اطلاعات بانک سپه"
-  },
-  {
-    "name": "مهراز آزاد",
-    "link": "https://t.me/Mehraz_Logs",
-    "status": "Active",
-    "tags": [
-      "iranian",
-      "farsi",
-      "personal"
-    ],
-    "description": "کانال شخصی من"
   }
 ]
