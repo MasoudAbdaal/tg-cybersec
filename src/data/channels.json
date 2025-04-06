@@ -1404,5 +1404,16 @@
       "actor"
     ],
     "description": "هک اطلاعات و باج‌گیری از 20 بانک ایرانی (دریافت 3 میلیون دلار رمزارز)، 23 شرکت بیمه، تپسی، سازمان حج، اسنپ‌فود و اتاقک."
+  },
+  {
+    "name": "Codebreakers",
+    "link": "https://t.me/ircodebreakers",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "actor"
+    ],
+    "description": "کانال عامل نشت و باح‌گیری اطلاعات بانک سپه"
   }
 ]
