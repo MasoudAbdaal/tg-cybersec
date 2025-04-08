@@ -109,7 +109,7 @@
 | مطالب رایگان و آزاد🎈 | https://t.me/TadavomnisT_channel | Active | | |
 | Soxoj insides | https://t.me/soxoj_insides | Active | osint | |
 | dukera | https://t.me/dukera_ch | Active | osint | |
-| Open Source intelligence [ OSINT ] | https://t.me/OsintBlackBox | Active | osint | |
+| Open Source intelligence [ OSINT ] | https://t.me/OsintBlackBox | Inactive | osint | کانال جدید: https://t.me/OsintGit|
 | Network books ｜ Magazine | https://t.me/book_network_ir | Active | | |
 | Geek Book 👩‍💻 | https://t.me/geekboook | Active | books | |
 | Splunk Administration § Devolopment Training | https://t.me/splunktrain | Active | blue | |
