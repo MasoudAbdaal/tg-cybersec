@@ -1427,5 +1427,14 @@
       "actor"
     ],
     "description": "کانال عامل نشت و باج‌گیری اطلاعات بانک سپه"
+  },
+  {
+    "name": "Network Security",
+    "link": "https://t.me/NetSecZ",
+    "status": "Active",
+    "tags": [
+      "iranian"
+    ],
+    "description": ""
   }
 ]
