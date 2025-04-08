@@ -150,3 +150,4 @@
 | Max Open Source ｜ ИТ ｜ Программирование ｜ Кибербезопасность ｜ Cybersecurity ｜ InfoSec ｜ Osint | https://t.me/coursmax | Active | russian, academy, osint | |
 | IRLeaks | https://t.me/irleaks | Inactive | iranian, farsi, actor | هک اطلاعات و باج‌گیری از 20 بانک ایرانی (دریافت 3 میلیون دلار رمزارز)، 23 شرکت بیمه، تپسی، سازمان حج، اسنپ‌فود و اتاقک. |
 | Codebreakers | https://t.me/ircodebreakers | Active | iranian, farsi, actor | کانال عامل نشت و باج‌گیری اطلاعات بانک سپه |
+| Network Security | https://t.me/NetSecZ | Active | iranian | | 
