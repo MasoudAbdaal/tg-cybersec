@@ -156,4 +156,5 @@
 | P.F.K CTF | https://t.me/PfkCTF | Active | ctf | |
 | CyberSecurity LF | https://t.me/cypack | Active | iranian, farsi, courses | |
 | کانال امنیت سایبری آراج | https://t.me/araj_security | Active | iranian, farsi, blue, personal | متعلق به احمدرضا اسدی |
-
+| EVE-NG | https://t.me/eve_ng_ir | Active | iranian, farsi | |
+| GothamSec | https://t.me/GothamSec | Active | iranian, farsi | |
