@@ -1499,5 +1499,25 @@
       "personal"
     ],
     "description": "متعلق به احمدرضا اسدی"
+  },
+  {
+    "name": "EVE-NG",
+    "link": "https://t.me/eve_ng_ir",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "GothamSec",
+    "link": "https://t.me/GothamSec",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi"
+    ],
+    "description": ""
   }
 ]
