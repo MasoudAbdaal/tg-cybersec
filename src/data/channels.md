@@ -3,7 +3,7 @@
 
 | Channel Name | Link | Status | Tags | Description |
 |-------------|------|--------|------|-------------|
-| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری. |
+| وب‌آموز | https://t.me/webamoozir | Active | farsi, iranian, cybercrime, sponsored, news | کانال بررسی و اطلاع‌رسانی جرایم سایبری |
 | مهراز آزاد | https://t.me/Mehraz_Logs | Active | iranian, farsi, personal | کانال شخصی من |
 | مرکز تحقیقاتی APT IRAN | https://t.me/APTIRAN | Active | red, cti, osint, news, iranian | |
 | OnHex | https://t.me/onhex_ir | Active | red, exploits, reverse-engineering, bug-bounty, news, iranian | |
@@ -14,7 +14,7 @@
 | Cyber Threat Intelligence | https://t.me/ctinow | Active | cti | |
 | InfoSec NEWS | https://t.me/defcon_news | Active | news | |
 | CVE Notify | https://t.me/cveNotify | Active | cve, vulnerabilities | |
-| فرصت‌های شغلی امنیت سایبری | https://t.me/job_sec | Active | jobs | |
+| فرصت‌های شغلی امنیت سایبری | https://t.me/job_sec | Active | jobs, iranian, farsi | اطلاع‌رسانی فرصت‌های شغلی حوزه امنیت سایبری در ایران |
 | Android Security & Malware | https://t.me/androidMalware | Active | mobile | |
 | The Hacker News | https://t.me/thehackernews | Active | news | |
 | Cyber Detective | https://t.me/cybdetective | Active | osint | |
@@ -23,9 +23,9 @@
 | The Bug Bounty Hunter | https://t.me/thebugbountyhunter | Active | bug_bounty | |
 | Malware News | https://t.me/malwr | Active | news | |
 | S.E.Book | https://t.me/S_E_Book | Active | russian | |
-| ITShield | https://t.me/itshield | Active | academy, farsi | |
+| ITShield | https://t.me/itshield | Active | academy, farsi | متعلق به ابراهیم اخزری |
 | Codeby | https://t.me/codeby_sec | Active | russian | |
-| CISO as a Service | https://t.me/CISOasaService | Active | iranian, personal | |
+| CISO as a Service | https://t.me/CISOasaService | Active | iranian, personal | متعلق به علیرضا قهرود |
 | SoheilSec | https://t.me/learnpentest | Active | iranian, red | |
 | cRyPtHoN™ INFOSEC (EN) | https://t.me/cRyPtHoN_INFOSEC_EN | Active | news | |
 | Peneter Tools | https://t.me/Peneter_Tools | Active | | |
@@ -69,13 +69,13 @@
 | HackerOne | https://t.me/HackerOne | Active | iranian | |
 | CyberSecurity Shield | https://t.me/CySecShield | Active | iranian | |
 | TryHackBox Story | https://t.me/TryHackBoxStory | Active | farsi | |
-| ⚔️ Ethical Hacking ⚔️ | https://t.me/sajjadteymouri | Active | iranian, farsi | |
+| ⚔️ Ethical Hacking ⚔️ | https://t.me/sajjadteymouri | Active | iranian, farsi, personal | متعلق به سجاد تیموری |
 | کانال بایت امن | https://t.me/securebyte | Active | farsi, academy | |
 | OSINT ● Investigations ● Cyber Search🔎 | https://t.me/freeosint | Active | russian, osint | |
 | APT ANALYSIS | https://t.me/APTANALYSIS | Active | | |
 | Dark Side of a Dark Mind | https://t.me/darksideofdarkmind | Active | | |
 | TolueAcademy | https://t.me/toluerise | Active | academy, iranian | |
-| Ai000 Cybernetics QLab | https://t.me/aioooir | Active | academy, group, iranian, farsi | |
+| Ai000 Cybernetics QLab | https://t.me/aioooir | Active | academy, group, iranian, farsi | متعلق به میلاد کهساری |
 | IACS | https://t.me/ics_cert | Active | iranian, farsi, ot, scada, ics | |
 | Code Review | https://t.me/CodeReview0o0 | Active | farsi, iranian | |
 | Safe Defense | https://t.me/safe_defense | Active | farsi, iranian, podcast, radio | |
@@ -101,12 +101,12 @@
 | APT | https://t.me/APT_Notes | Active | russian | |
 | Blue Team | https://t.me/BlueTeamKit | Active | blue, iranian | |
 | P.F.K Security | https://t.me/PfkSecurity | Active | iranian, farsi | |
-| digMeMore | https://t.me/digmemore | Active | academy, iranian, farsi | |
+| digMeMore | https://t.me/digmemore | Active | academy, iranian, farsi | متعلق به یاشار شاهین‌زاده |
 | BlackHat - UnpackME | https://t.me/DevirtualizeME | Active | reverse-engineering | |
 | Unk9vvN | https://t.me/Unk9vvN | Active | iranian, farsi, vulnerabilities, academy | |
 | HTTP Land | https://t.me/HTTPLand | Active | iranian, farsi | |
 | HackGit | https://t.me/hackgit | Active | | |
-| مطالب رایگان و آزاد🎈 | https://t.me/TadavomnisT_channel | Active | | |
+| مطالب رایگان و آزاد🎈 | https://t.me/TadavomnisT_channel | Active | iranian, farsi, personal | متعلق به بهراد |
 | Soxoj insides | https://t.me/soxoj_insides | Active | osint | |
 | dukera | https://t.me/dukera_ch | Active | osint | |
 | Open Source intelligence [ OSINT ] | https://t.me/OsintBlackBox | Inactive | osint | کانال جدید: https://t.me/OsintGit |
@@ -124,11 +124,11 @@
 | Peneter Media | https://t.me/Peneter_Media | Active | iranian, farsi, red | |
 | Hacking Assets | https://t.me/HackingAssets | Active | courses | |
 | SCARPA ｜ AI Security ☢️ | https://t.me/SACARPA | Active | iranian, farsi, ai | |
-| Sherlock Holmes of the digital age… | https://t.me/ibederov_en | Active | osint, russian | |
+| Sherlock Holmes of the digital age… | https://t.me/ibederov_en | Active | osint, russian, personal | |
 | Geek girl 👩‍💻 | https://t.me/geeekgirls | Active | iranian | |
 | Forensic In persian | https://t.me/forensicIR | Active | forensics | |
 | Hypersec | https://t.me/hypersec | Active | company, academy, team, iranian, farsi, blue | |
-| ..: لیک‌فا ｜ Leakfa :.. | https://t.me/leakfarsi | Active | iranian, farsi, data, news | iranian dataleaks search engine -Like https://haveibeenpwned.com |
+| ..: لیک‌فا ｜ Leakfa :.. | https://t.me/leakfarsi | Active | iranian, farsi, data, news | https://leakfa.com/search |
 | Spider Crew ｜ Bug Bounty Tips, Tools, Writeups & Exploits | https://t.me/Spider_Crew | Active | bug-bounty | |
 | Crusaders | https://t.me/ArgentCrusader0 | Active | iranian, osint, farsi | |
 | OsintGit | https://t.me/OsintGit | Active | osint | |
@@ -150,4 +150,10 @@
 | Max Open Source ｜ ИТ ｜ Программирование ｜ Кибербезопасность ｜ Cybersecurity ｜ InfoSec ｜ Osint | https://t.me/coursmax | Active | russian, academy, osint | |
 | IRLeaks | https://t.me/irleaks | Inactive | iranian, farsi, actor | هک اطلاعات و باج‌گیری از 20 بانک ایرانی (دریافت 3 میلیون دلار رمزارز)، 23 شرکت بیمه، تپسی، سازمان حج، اسنپ‌فود و اتاقک. |
 | Codebreakers | https://t.me/ircodebreakers | Active | iranian, farsi, actor | کانال عامل نشت و باج‌گیری اطلاعات بانک سپه |
-| Network Security | https://t.me/NetSecZ | Active | iranian | | 
+| Network Security | https://t.me/NetSecZ | Active | iranian | |
+| 🕸 Articles | https://t.me/web_articles | Active | webapp, pentest, bug-bounty, vulnerabilities, iraniran, farsi | |
+| Cyber Security Course | https://t.me/cybersecuritycoursex | Active | courses | |
+| P.F.K CTF | https://t.me/PfkCTF | Active | ctf | |
+| CyberSecurity LF | https://t.me/cypack | Active | iranian, farsi, courses | |
+| کانال امنیت سایبری آراج | https://t.me/araj_security | Active | iranian, farsi, blue, personal | متعلق به احمدرضا اسدی |
+
