@@ -10,7 +10,7 @@
       "sponsored",
       "news"
     ],
-    "description": "کانال بررسی و اطلاع‌رسانی جرایم سایبری."
+    "description": "کانال بررسی و اطلاع‌رسانی جرایم سایبری"
   },
   {
     "name": "مهراز آزاد",
@@ -114,9 +114,11 @@
     "link": "https://t.me/job_sec",
     "status": "Active",
     "tags": [
-      "jobs"
+      "jobs",
+      "iranian",
+      "farsi"
     ],
-    "description": ""
+    "description": "اطلاع‌رسانی فرصت‌های شغلی حوزه امنیت سایبری در ایران"
   },
   {
     "name": "Android Security & Malware",
@@ -200,7 +202,7 @@
       "academy",
       "farsi"
     ],
-    "description": ""
+    "description": "متعلق به ابراهیم اخزری"
   },
   {
     "name": "Codeby",
@@ -219,7 +221,7 @@
       "iranian",
       "personal"
     ],
-    "description": ""
+    "description": "متعلق به علیرضا قهرود"
   },
   {
     "name": "SoheilSec",
@@ -621,9 +623,10 @@
     "status": "Active",
     "tags": [
       "iranian",
-      "farsi"
+      "farsi",
+      "personal"
     ],
-    "description": ""
+    "description": "متعلق به سجاد تیموری"
   },
   {
     "name": "کانال بایت امن",
@@ -679,7 +682,7 @@
       "iranian",
       "farsi"
     ],
-    "description": ""
+    "description": "متعلق به میلاد کهساری"
   },
   {
     "name": "IACS",
@@ -937,7 +940,7 @@
       "iranian",
       "farsi"
     ],
-    "description": ""
+    "description": "متعلق به یاشار شاهین‌زاده"
   },
   {
     "name": "BlackHat - UnpackME",
@@ -981,8 +984,12 @@
     "name": "مطالب رایگان و آزاد🎈",
     "link": "https://t.me/TadavomnisT_channel",
     "status": "Active",
-    "tags": [],
-    "description": ""
+    "tags": [
+      "iranian",
+      "farsi",
+      "personal"
+    ],
+    "description": "متعلق به بهراد"
   },
   {
     "name": "Soxoj insides",
@@ -1159,7 +1166,8 @@
     "status": "Active",
     "tags": [
       "osint",
-      "russian"
+      "russian",
+      "personal"
     ],
     "description": ""
   },
@@ -1205,7 +1213,7 @@
       "data",
       "news"
     ],
-    "description": "iranian dataleaks search engine -Like https://haveibeenpwned.com"
+    "description": "https://leakfa.com/search"
   },
   {
     "name": "Spider Crew ｜ Bug Bounty Tips, Tools, Writeups & Exploits",
@@ -1436,5 +1444,60 @@
       "iranian"
     ],
     "description": ""
+  },
+  {
+    "name": "🕸 Articles",
+    "link": "https://t.me/web_articles",
+    "status": "Active",
+    "tags": [
+      "webapp",
+      "pentest",
+      "bug-bounty",
+      "vulnerabilities",
+      "iraniran",
+      "farsi"
+    ],
+    "description": ""
+  },
+  {
+    "name": "Cyber Security Course",
+    "link": "https://t.me/cybersecuritycoursex",
+    "status": "Active",
+    "tags": [
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "P.F.K CTF",
+    "link": "https://t.me/PfkCTF",
+    "status": "Active",
+    "tags": [
+      "ctf"
+    ],
+    "description": ""
+  },
+  {
+    "name": "CyberSecurity LF",
+    "link": "https://t.me/cypack",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "courses"
+    ],
+    "description": ""
+  },
+  {
+    "name": "کانال امنیت سایبری آراج",
+    "link": "https://t.me/araj_security",
+    "status": "Active",
+    "tags": [
+      "iranian",
+      "farsi",
+      "blue",
+      "personal"
+    ],
+    "description": "متعلق به احمدرضا اسدی"
   }
 ]
