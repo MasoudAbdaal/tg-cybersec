@@ -128,7 +128,7 @@
 | Geek girl 👩‍💻 | https://t.me/geeekgirls | Active | iranian | |
 | Forensic In persian | https://t.me/forensicIR | Active | forensics | |
 | Hypersec | https://t.me/hypersec | Active | company, academy, team, iranian, farsi, blue | |
-| ..: لیک‌فا ｜ Leakfa :.. | https://t.me/leakfarsi | Active | iranian, farsi, data, news | https://leakfa.com/search |
+| ..: لیک‌فا ｜ Leakfa :.. | https://t.me/leakfarsi | Active | iranian, farsi, data, news | سامانه ردیابی نشت اطلاعات ایرانیان https://leakfa.com/search |
 | Spider Crew ｜ Bug Bounty Tips, Tools, Writeups & Exploits | https://t.me/Spider_Crew | Active | bug-bounty | |
 | Crusaders | https://t.me/ArgentCrusader0 | Active | iranian, osint, farsi | |
 | OsintGit | https://t.me/OsintGit | Active | osint | |
